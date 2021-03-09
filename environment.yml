@@ -1,0 +1,23 @@
+name: jonction-heat-islands
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - pip:
+    - -e .
+    - git+git://github.com/martibosch/PyETo.git@0b7ac9f149f4c89c5b5759a875010c521aa07f0f
+    - git+git://github.com/martibosch/swiss-uhi-utils.git@0166029edc611ef8544942dbc1ea3408fe1ded15
+  - setuptools
+  - wheel
+  - click
+  - flake8
+  - flake8-isort>=4
+  - python-dotenv>=0.5.1
+  - python=3
+  - ipykernel
+  - geopandas
+  - pyproj
+  - rasterio
+  - s3fs
+  - salem
+  - wget
